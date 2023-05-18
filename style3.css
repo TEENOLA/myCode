@@ -1,0 +1,168 @@
+*{
+    box-sizing: border-box;
+}
+
+.header{
+    grid-area: header;
+}
+
+.sidebar1{
+    grid-area: sb1;
+}
+
+.sidebar2{
+    grid-area: sb2;
+}
+
+.sidebar3{
+    grid-area: sb3;
+}
+
+.footer{
+    grid-area: footer;
+}
+.final{
+    grid-area: final;
+}
+
+.page{
+    display: grid;
+    grid-template-areas:
+    "header header header header"
+    "sb1 sb1 sb2 sb2"
+    "sb1 sb1 sb3 sb3"
+    ". footer footer ."
+    "final final final final";
+    grid-template-rows: auto 1fr 1.5fr 1fr auto;
+
+}
+
+.header{
+    text-align: center;
+    border: 1px solid brown;
+    background-color: rgb(65, 31, 15);
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: bisque;
+    padding: 20px;
+ 
+}
+
+.header .logo{
+    height: 30px
+}
+
+.sidebar1{
+    margin: 30px;
+    border: 1px solid rgb(247, 227, 200);
+    background-color: rgb(247, 227, 200);
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.sidebar2{
+    margin: 30px;
+    border: 1px solid rgb(247, 227, 200);
+    background-color: rgb(247, 227, 200);
+    padding: 30px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.sidebar3{
+    margin: 30px;
+    border: 1px solid rgb(247, 227, 200);
+    background-color: rgb(247, 227, 200);
+    padding: 30px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.footer{
+    font-family: calibri;
+    justify-content: center;
+}
+
+
+.title{
+    color: rgb(182, 125, 57);
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+hr{
+    border-top: 1px solid rgb(182, 125, 57) ;
+}
+
+.order{
+    font-family: calibri;
+    font-weight: bold;
+    font-size: large;
+}
+
+.sub-order{
+    font-family: calibri;
+    color: rgb(182, 125, 57);
+}
+
+.num{
+    font-family: calibri;
+    font-weight: bold;
+    font-size: large;
+    float: right;
+}
+
+input[type=text]{
+    width: 80%;
+    height: 50px;
+    border-radius: 30px;
+    border-color:  rgb(182, 125, 57) ;
+    border-style: solid;
+    background-color: rgb(247, 227, 200);
+}
+
+input[type=submit]{
+    width: 100%;
+    height: 50px;
+    border-radius: 30px;
+    border-color:  rgb(182, 125, 57) ;
+    border-style: solid;
+    background-color: rgb(182, 125, 57); 
+    cursor: pointer;
+
+}
+
+.name{
+    font-size: 11px;
+    background-color:rgb(247, 227, 200) ;
+    position: absolute;
+    left: 58px;
+    bottom: 70px;
+    color: rgb(182, 125, 57);
+    padding: 5px;
+}
+
+.card{
+    font-size: 11px;
+    background-color:rgb(247, 227, 200) ;
+    position: absolute;
+    left: 58px;
+    top: 68px;
+    color: rgb(182, 125, 57);
+    padding: 5px;
+}
+
+.CCV{
+    font-size: 11px;
+    background-color:rgb(247, 227, 200) ;
+    position: absolute;
+    left: 58px;
+    bottom: 122px;
+    color: rgb(182, 125, 57);
+    padding: 5px;
+}
+
+.fig{
+    float: right;
+}

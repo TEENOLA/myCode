@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style3.css" />
+    <title>Coffee Masters</title>
+  </head>
+  <body>
+    <div class="page">
+      <div class="header">
+        <img
+          class="logo"
+          src="https://btholt.github.io/complete-intro-to-web-dev-v3/images/coffee_masters_logo.png"
+          alt="coffee masters logo"
+        />
+        <span class="logo-text">Coffee Masters</span>
+      </div>
+      <div class="sidebar1">
+        <p class="title">ITEMS</p>
+        <br />
+        <p>
+          1x &nbsp; &nbsp; <span class="order">Cappucino</span>
+          <span class="num">$6.00</span>
+        </p>
+        <p class="sub-order">
+          &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;Light foam
+        </p>
+        <hr />
+        <p>
+          1x &nbsp; &nbsp; <span class="order">Cappucino</span>
+          <span class="num"> $7.90</span>
+        </p>
+        <p class="sub-order">
+          &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;Almond Milk <br />
+          <br />
+          &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;Double Espresso Shot
+        </p>
+        <hr />
+        <p>
+          1x &nbsp; &nbsp; <span class="order">Croissant</span>
+          <span class="num"> $5.37</span>
+        </p>
+        <p class="sub-order">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;Butter</p>
+      </div>
+
+      <div class="sidebar2">
+        <p class="title">NAME</p>
+        <br />
+        <label for="order-name" class="name">Name for order</label>
+        <input type="text" id="order-name" class="order-input" />
+      </div>
+
+      <div class="sidebar3">
+        <p class="title">PAYMENT</p>
+        <label for="card-number" class="card">Card number</label>
+        <input type="text" id="card-number" class="card-input" />
+        <br /><br /><br />
+        <label for="ccv-number" class="CCV">CCV number</label>
+        <input type="text" id="CCV-number" class="CCV-input" />
+      </div>
+
+      <div class="footer">
+        <p>Subtotal: <span class="fig"> $19.27</span></p>
+        <p>Tax:<span class="fig">$0.96 </span></p>
+        <p>Total: <span class="fig"> $20.23 </span></p>
+      </div>
+
+      <div class="final">
+        <input type="submit" value="Place Order" />
+      </div>
+    </div>
+  </body>
+</html>
